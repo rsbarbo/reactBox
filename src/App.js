@@ -8,6 +8,12 @@ class App extends React.Component {
     this.state = { ideas: [] }
   }
 
+  componentDidMount(){
+    const ideas = JSON.parse(localStorage.getItem('ideas'))
+
+    this.setState({ ideas: ideas ? ideas : [] })
+  }
+
   storeIdea(idea){
     //peform the action of adding our new idae to all the ideas
     this.state.ideas.push( idea )
