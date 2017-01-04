@@ -11,6 +11,8 @@ class CreateIdeaForm extends React.Component {
 
     const fieldName = event.target.name
     const fieldValue = event.target.value
+
+    this.setState({ [fieldName]: fieldValue })
   }
 
   render(){
