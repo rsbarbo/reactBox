@@ -7,7 +7,10 @@ class CreateIdeaForm extends React.Component {
   }
 
   updateProperties(event) {
-    
+    event.preventDefault();
+
+    const fieldName = event.target.name
+    const fieldValue = event.target.value
   }
 
   render(){
