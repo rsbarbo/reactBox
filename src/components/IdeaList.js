@@ -6,8 +6,10 @@ const IdeaList = ({ ideas, destroy }) => {
     <div className='IdeaList'>
       { ideas.map( idea => <Idea { ...idea }
                             key={idea.id}
-                            destroy={ destroy }/> )
-                           }
+                            destroy={ destroy }
+                            update={ update }/>
+                          )
+                        }
     </div>
   )
 }
