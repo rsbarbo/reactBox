@@ -13,7 +13,11 @@ class App extends React.Component {
     this.state.ideas.push( idea )
     let ideas = this.state.ideas
 
-    this.setState({ ideas: ideas })
+    this.setState({ ideas: ideas }, () => this.localStorageVar(ideas))
+  }
+
+  localStorageVar(ideas){
+    localStorage.setItem('ideas', JSON.stringify(ideas))
   }
 
   render() {
