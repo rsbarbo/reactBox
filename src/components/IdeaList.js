@@ -1,5 +1,5 @@
 import React from 'react'
-import Idea from '../Idea'
+import Idea from '../components/Idea'
 
 const IdeaList = ({ ideas }) => {
   return(
