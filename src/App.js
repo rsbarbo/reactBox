@@ -1,5 +1,6 @@
 import React from 'react';
 import CreateIdeaForm from './components/CreateIdeaForm.js'
+import IdeaList from './components/IdeaList.js'
 
 class App extends React.Component {
   constructor(){
@@ -17,7 +18,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <CreateIdeaForm saveIdea={ this.storeIdea.bind(this) }/>
+      <div>
+        <CreateIdeaForm saveIdea={ this.storeIdea.bind(this) }/>
+        <IdeaList/>
+      </div>
     );
   }
 }
