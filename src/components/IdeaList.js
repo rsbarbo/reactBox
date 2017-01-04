@@ -1,22 +1,13 @@
 import React from 'react'
+import Idea from '../Idea'
 
 const IdeaList = ({ ideas }) => {
   return(
     <div className='IdeaList'>
-      { ideas.map( idea => <Idea { ...idea } /> ) }
+      { ideas.map( idea => <Idea { ...idea }
+                            key={idea.id}/> ) }
     </div>
   )
 }
 
-const Idea = ({ title, body, id }) => {
-  return(
-    <div className="Idea">
-      <h3>{title}</h3>
-      <p>{body}</p>
-      <button>Destroy</button>
-      <button>Update</button>
-    </div>
-  )
-}
-
-export default IdeaList
+export default IdeaList;
