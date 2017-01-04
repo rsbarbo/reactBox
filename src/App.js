@@ -20,7 +20,7 @@ class App extends React.Component {
     return (
       <div>
         <CreateIdeaForm saveIdea={ this.storeIdea.bind(this) }/>
-        <IdeaList/>
+        <IdeaList ideas={ this.state.ideas }/>
       </div>
     );
   }

@@ -1,9 +1,10 @@
 import React from 'react'
 
-class IdeaList extends React.Component {
-  render() {
-    return(
-      
-    )
-  }
+const IdeaList = ({ ideas }) => {
+  return(
+    <div className='IdeaList'>
+      // I need to render all the ideas and iterate through them
+
+    </div>
+  )
 }
