@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Idea = ({ title, body, id }) => {
+const Idea = ({ title, body, id, destroy }) => {
   return(
     <div className="Idea">
       <h3>{title}</h3>
       <p>{body}</p>
-      <button>Destroy</button>
+      <button onClick={ destroy }>Destroy</button>
       <button>Update</button>
     </div>
   )
