@@ -19,3 +19,5 @@ const Idea = ({ title, body, id }) => {
     </div>
   )
 }
+
+export default IdeaList
