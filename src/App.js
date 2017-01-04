@@ -27,7 +27,8 @@ class App extends React.Component {
   }
 
   destroyIdea(id){
-    console.log("I am trying to destroy idea ID# " + id)
+    let ideas = this.state.ideas.filter( idea => idea.id !== id)
+    this.setState({ ideas: ideas}, () => this.localStorageVar(ideas))
   }
 
   render() {
