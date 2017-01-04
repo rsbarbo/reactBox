@@ -26,16 +26,19 @@ class App extends React.Component {
     localStorage.setItem('ideas', JSON.stringify(ideas))
   }
 
+  destroyIdea(id){
+    console.log("I am trying to destroy idea ID# " + id)
+  }
+
   render() {
     return (
       <div>
         <CreateIdeaForm saveIdea={ this.storeIdea.bind(this) }/>
-        <IdeaList ideas={ this.state.ideas }/>
+        <IdeaList ideas={ this.state.ideas }
+                  destroy={ this.destroyIdea.bind(this) }/>
       </div>
     );
   }
 }
-
-
 
 export default App;
