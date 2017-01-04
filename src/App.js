@@ -40,7 +40,8 @@ class App extends React.Component {
       <div>
         <CreateIdeaForm saveIdea={ this.storeIdea.bind(this) }/>
         <IdeaList ideas={ this.state.ideas }
-                  destroy={ this.destroyIdea.bind(this) }/>
+                  destroy={ this.destroyIdea.bind(this) }
+                  update={ this.updateIdea.bind(this)}/>
       </div>
     );
   }
