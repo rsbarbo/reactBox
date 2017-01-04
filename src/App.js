@@ -31,6 +31,10 @@ class App extends React.Component {
     this.setState({ ideas: ideas}, () => this.localStorageVar(ideas))
   }
 
+  updateIdea(id){
+    console.log("update this idea!")
+  }
+
   render() {
     return (
       <div>
